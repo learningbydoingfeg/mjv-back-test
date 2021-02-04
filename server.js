@@ -19,7 +19,9 @@ app.use(morgan('dev'));
 
 app.use('/products', auth, productRouter)
 app.use('/users', userRouter)
-
+app.use('/', (req, res) => {
+    res.status(200).json({message:'HEALTH'})
+})
 
 
 app.listen( port, () => 
