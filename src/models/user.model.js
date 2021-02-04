@@ -24,6 +24,12 @@ const userSchema = new Schema({
     validate: [uniqueEmail]
   },
 
+  admin:{
+    type:'Boolean',
+    default:'false',
+    required:true
+  }
+
 
 }, {
   timestamps: true
