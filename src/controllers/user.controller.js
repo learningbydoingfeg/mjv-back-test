@@ -39,7 +39,7 @@ module.exports = {
         { expiresIn: 60 * 60 * 24 * 365 }
       );
 
-      res.status(200).json({ token });
+      res.status(200).json({ token: token, user: user });
     } catch(err) {
       res.status(400).json(err);
     }

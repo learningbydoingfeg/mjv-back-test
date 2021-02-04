@@ -20,6 +20,8 @@ app.use(morgan('dev'));
 app.use('/products', auth, productRouter)
 app.use('/users', userRouter)
 
+
+
 app.listen( port, () => 
     console.log(`server listening on http://localhost:${port}`)
 ); 
